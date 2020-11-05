@@ -3,56 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/sass/main.css">
+    <link rel="stylesheet" href=".public\css\style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/fa07b9d4dd.js" crossorigin="anonymous"></script>
     <title>Ohmyfood</title>
 </head>
 <body>
 
-    <!-- header -->
+
     <header class='header'>
         <img src="images/logo/ohmyfood.png" alt="logo du site ohmyfood" class="header__logo">
     </header>
 
-    <!-- localisation -->
+
     <div class='localisation'>
-        <i class="fas fa-map-marker-alt localisation__icon"></i>
-        <p class="localisation__city">Paris, Belleville</p>
+        <div class="localisation__container">
+            <span class="fas fa-map-marker-alt localisation__icon"></span>
+            <p class="localisation__city">Paris, Belleville</p>
+        </div>
     </div>
 
-    <!-- reservez -->
+
     <section class='reservation'>
         <h2 class='reservation__title'>Réservez le menu qui vous convient</h2>
         <p class='reservation__text'>Découvrez des restaurants d'exeption, sélectionnés par nos soins.</p>
         <a href="#"><button class="btn__order">Explorer nos restaurants</button></a>
     </section>
 
-    <!-- fonctionnement -->
-    <section class='operation'>
+
+     <section class='operation'>
         <h2 class="operation__title">Fonctionnement</h2>
         <div class="operation__box">
-            <div class="operation__bubble">
-                <p class="operation__bubble--number">1</p>
-            </div>
-            <i class="fas fa-mobile-alt operation__box--icon1"></i>
+            <p class="operation__box--bubble">1</p>
+            <span class="fas fa-mobile-alt operation__icon"></span>
             <p class="operation__text">Choisissez un restaurant</p>
         </div>
         <div class="operation__box">
-            <div class="operation__bubble">
-                <p class="operation__bubble--number">2</p>
-            </div>
-            <i class="fas fa-list operation__box--icon1"></i>
+            <p class="operation__box--bubble">2</p>
+            <span class="fas fa-list operation__icon"></span>
             <p class="operation__text">Choisissez un restaurant</p>
         </div>
         <div class="operation__box">
-            <div class="operation__bubble">
-                <p class="operation__bubble--number">3</p>
-            </div>
-            <i class="fas fa-store operation__box--icon1"></i>
+            <p class="operation__box--bubble">3</p>
+            <span class="fas fa-store operation__icon"></span>
             <p class="operation__text">Choisissez un restaurant</p>
         </div>
     </section>
-    <!-- Restaurants -->
+
+<!-- 
     <section class="restaurants">
         <h2>Restaurants</h2>
         <article class="restaurants__article">
@@ -112,7 +111,7 @@
             </a>
         </article>
     </section>
-    <!-- FOOTER -->
+
     <footer class="footer">
         <div>
             <img src="/images/logo/ohmyfood@2x.svg" alt="logo du site">
@@ -123,6 +122,6 @@
         <a href="#"><i></i></a>
         <a><p>Mentions légales</p></a>
         <a href = "mailto: abc@example.com">Send Email</a>
-    </footer>
+    </footer>  -->
 </body>
 </html>

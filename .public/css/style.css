@@ -1,1 +1,91 @@
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.btn__order {
+  border-radius: 2rem;
+  padding: 0.85rem 0.85rem;
+  color: white;
+  border-style: none;
+  background: #a159d9;
+  background: linear-gradient(351deg, #a159d9 35%, #ff79d4 100%);
+  font-family: "roboto";
+  font-size: 0.8rem;
+  font-weight: 400;
+  margin-bottom: 2.5rem;
+  box-shadow: 1px 1px 7px -3px #000000;
+}
+
+.header {
+  text-align: center;
+  padding: 1.3rem 0 0.5rem 0;
+}
+.header__logo {
+  height: 1.5rem;
+}
+
+.localisation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #E8E8E8;
+  font-weight: 650;
+  color: #383838;
+  font-family: "roboto";
+  font-size: 0.9rem;
+  box-shadow: #b1b6bb 1px 1px 3px 0px inset;
+}
+.localisation__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  margin-right: 2rem;
+}
+.localisation__city {
+  margin-left: 1.1rem;
+}
+
+.reservation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #F0F0F0;
+  padding: 0rem 1rem;
+}
+.reservation__title {
+  margin: 0;
+  text-align: center;
+  padding: 1.8rem 1.9rem 0.7rem 1.9rem;
+  font-size: 1.3rem;
+}
+.reservation__text {
+  text-align: center;
+  margin: 0 0 1.8rem 0;
+  font-weight: 300;
+}
+
+.operation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0rem;
+}
+.operation__title {
+  font-size: 1.2rem;
+}
+.operation__box {
+  display: inline-flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.operation__box--bubble {
+  background-color: red;
+  border-radius: 100%;
+  padding: 0.5rem;
+}
+
 /*# sourceMappingURL=style.css.map */
