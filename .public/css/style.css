@@ -3,6 +3,16 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.main {
+  max-width: 1440px;
+  margin: auto;
+}
+
 .btn__order {
   border-radius: 2rem;
   padding: 0.85rem 0.85rem;
@@ -70,22 +80,100 @@ body {
 .operation {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 0rem;
+  gap: 1.3rem;
+  padding: 2rem 1.5rem;
 }
 .operation__title {
   font-size: 1.2rem;
+  margin: 0.5rem 0;
 }
 .operation__box {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   gap: 1.5rem;
+  background-color: #F5F5F5;
+  border-radius: 1.3rem;
+  padding: 0.5rem;
+  box-shadow: 0px 3px 5px 3px rgba(0, 0, 0, 0.09);
+  width: 270px;
+}
+.operation__box--icon {
+  position: relative;
+  right: 1.1rem;
+  color: gray;
+}
+.operation__box--text {
+  position: relative;
+  right: 1.2rem;
+  font-weight: bold;
+  font-size: 0.9rem;
 }
 .operation__box--bubble {
-  background-color: red;
-  border-radius: 100%;
-  padding: 0.5rem;
+  background-color: #9356DC;
+  font-size: 0.7rem;
+  border-radius: 6rem;
+  width: 1.2rem;
+  height: 1.2rem;
+  text-align: center;
+  line-height: 1.2rem;
+  position: relative;
+  right: 0.9rem;
+  color: white;
+}
+
+.restaurant {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+  gap: 1.5rem;
+  padding: 1rem;
+}
+.restaurant .restaurantBox {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 1.25rem;
+  box-shadow: 0 0 16px #0000002e;
+  height: 100%;
+  max-width: 370px;
+}
+.restaurant .restaurantBox__imgwrap {
+  padding: 0;
+  margin: 0;
+  object-fit: cover;
+}
+.restaurant .restaurantBox__imgwrap--img {
+  height: 7rem;
+  object-fit: cover;
+  border-radius: 1rem 1rem 0 0;
+  width: 100%;
+}
+.restaurant .restaurantBox .restaurantBoxCaption {
+  display: flex;
+  padding: 5px;
+}
+.restaurant .restaurantBox .restaurantBoxCaption__elem {
+  padding: 5px;
+  line-height: 1.3rem;
+}
+.restaurant .restaurantBox .restaurantBoxCaption__elem--title {
+  margin: 0;
+  font-size: 1rem;
+}
+.restaurant .restaurantBox .restaurantBoxCaption__elem--text {
+  margin: 0;
+}
+.restaurant .restaurantBox .restaurantBox__logo--heart {
+  font-size: 1.2rem;
+}
+
+.footer {
+  background-color: #202020;
+}
+.footer .footer__head--logo {
+  filter: invert(1);
+  width: 30%;
+  padding: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */
