@@ -38,20 +38,19 @@
 
         <div class="operation__box">
             <p class="operation__box--bubble">1</p>
-            <span class="fas fa-mobile-alt operation__box--icon"></span>
+            <span class="fas fa-mobile-alt operation__box--icon" id="iconHover"></span>
             <p class="operation__box--text">Choisissez un restaurant</p>
         </div>
         <div class="operation__box">
             <p class="operation__box--bubble">2</p>
-            <span class="fas fa-list operation__box--icon"></span>
+            <span class="fas fa-list operation__box--icon" id="iconHover"></span>
             <p class="operation__box--text">Composez votre menu</p>
         </div>
         <div class="operation__box">
             <p class="operation__box--bubble">3</p>
-            <span class="fas fa-store operation__box--icon"></span>
+            <span class="fas fa-store operation__box--icon" id="iconHover" ></span>
             <p class="operation__box--text">Dégustez au restaurant</p>
         </div>
-
     </section>
 
 
@@ -112,19 +111,27 @@
                     </div>
                 </div>
             </a>
-
     </section>
+
  </main>
     <footer class="footer">
         <div class="footer__head">
             <img src="/images/logo/ohmyfood@2x.svg" alt="logo du site" class="footer__head--logo" >
         </div>
-        <a href="#">
-            <i></i>
-            <p>Proposer un restaurant</p></a>
-        <a href="#"><i></i></a>
-        <a><p>Mentions légales</p></a>
-        <a href = "mailto: abc@example.com">Send Email</a>
+        <div class= footerContainer>
+            <a href="#" class="footerContainer__box">
+                <i class="fas fa-utensils footerContainer__box--icon"></i>
+                <p class="footerContainer__box--text"><strong>Proposer un restaurant</strong></p>
+            </a>
+            <a href="#" class="footerContainer__box">
+                <i class="fas fa-hands-helping footerContainer__box--icon"></i>
+                <p class="footerContainer__box--text"><strong>Devenir partenaire</strong></p>
+            </a>
+            <a href="#">
+                <p class="footerContainer__box--text">Mentions légales</p>
+            </a>
+            <a href = "mailto: abc@example.com" class="footerContainer__box--text">Contact</a>
+        </div>
     </footer>  
 </body>
 </html>
