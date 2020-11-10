@@ -3,12 +3,31 @@
     padding: 0.85rem 0.85rem;
     color: white;
     border-style: none ;
-    background: rgb(161,89,217);
     background: linear-gradient(351deg, rgba(161,89,217,1) 35%, rgba(255,121,212,1) 100%);
     font-family: 'roboto';
     font-size: 0.8rem;
     font-weight: 400;
     margin-bottom: 2.5rem;
     box-shadow: 1px 1px 7px -3px #000000;
+    border: none;
+    outline: none;
+}
 
+.btn__order:hover{
+    background: linear-gradient(351deg, rgb(165, 101, 214) 35%, rgb(248, 130, 211) 100%);
+        box-shadow: 1px 2px 8px -2px #000000;
+
+}
+
+//Utiliser la fonction enlighten pour éclaircir le bouton !!
+
+
+
+
+.heart {
+    font-size: 1.3rem;
+    color: pink;
+    border-radius: 100%;
+    border-color: black 1px solid;
+    background-size: cover;
 }

@@ -1,8 +1,17 @@
 .header {
+    display:flex;
+    justify-content: center;
     text-align: center;
     padding: 1.3rem 0 0.5rem 0 ;
     &__logo  {
         height: 1.5rem;
+
     }
 }
 
+.fa-arrow-left {
+   position: absolute;
+   left:5%;
+   font-size: 1.1rem;
+
+}

@@ -1,0 +1,49 @@
+
+.footer {
+    background-color: #383838;
+    display: flex;
+    flex-direction: column;
+    padding: 1.3rem 1.3rem;
+
+
+    &__head {
+
+        margin-bottom: 0.6rem;
+
+       &--logo {
+           filter: invert(1);
+           width: 30%;  
+       }
+   }
+}
+
+.footerContainer {
+
+    display: flex;
+    flex-direction: column;
+    filter: invert(1);
+    line-height: 0.8rem;
+
+
+    &__box {
+
+        display: flex;
+        align-items: center;
+        justify-content: start;
+
+        margin: 0;
+    
+        &--text{
+            margin: 0.3rem;
+            font-size: 0.9rem;
+        }
+        &--text:hover{
+            text-decoration: underline;
+        }
+        &--icon {
+            font-size: 0.7rem;
+        }
+    
+    }
+}
+

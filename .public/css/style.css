@@ -9,7 +9,6 @@ a {
 }
 
 .main {
-  max-width: 1440px;
   margin: auto;
 }
 
@@ -18,21 +17,58 @@ a {
   padding: 0.85rem 0.85rem;
   color: white;
   border-style: none;
-  background: #a159d9;
   background: linear-gradient(351deg, #a159d9 35%, #ff79d4 100%);
   font-family: "roboto";
   font-size: 0.8rem;
   font-weight: 400;
   margin-bottom: 2.5rem;
   box-shadow: 1px 1px 7px -3px #000000;
+  border: none;
+  outline: none;
+}
+
+.btn__order:hover {
+  background: linear-gradient(351deg, #a565d6 35%, #f882d3 100%);
+  box-shadow: 1px 2px 8px -2px #000000;
+}
+
+.heart {
+  font-size: 1.3rem;
+  color: pink;
+  border-radius: 100%;
+  border-color: black 1px solid;
+  background-size: cover;
 }
 
 .header {
+  display: flex;
+  justify-content: center;
   text-align: center;
   padding: 1.3rem 0 0.5rem 0;
 }
 .header__logo {
   height: 1.5rem;
+}
+
+.fa-arrow-left {
+  position: absolute;
+  left: 5%;
+  font-size: 1.1rem;
+}
+
+.wrapBackground__img {
+  height: 15rem;
+  object-fit: cover;
+  width: 100%;
+}
+
+.cardFull {
+  background-color: #F0F0F0;
+  border-radius: 1.5rem 1.5rem 0 0;
+}
+
+.cardTop__title {
+  margin: 0;
 }
 
 .localisation {
@@ -81,11 +117,11 @@ a {
   display: flex;
   flex-direction: column;
   gap: 1.3rem;
-  padding: 2rem 1.5rem;
+  padding: 2rem 1.5rem 3.5rem;
 }
 .operation__title {
-  font-size: 1.2rem;
-  margin: 0.5rem 0;
+  font-size: 1.4rem;
+  margin: 0;
 }
 .operation__box:hover {
   background-color: rgba(147, 86, 220, 0.15);
@@ -144,21 +180,41 @@ a {
   background-color: white;
   border-radius: 1rem 1rem 1rem 1rem;
   box-shadow: 0 0 16px #0000002e;
+  max-width: 425px;
 }
 .restaurant .restaurantBox__imgwrap {
+  position: relative;
   padding: 0;
   margin: 0;
 }
 .restaurant .restaurantBox__imgwrap--img {
-  height: 9rem;
+  height: 9.3rem;
   object-fit: cover;
   border-radius: 1rem 1rem 0 0;
   width: 100%;
   object-position: bottom;
 }
+.restaurant .restaurantBox__imgwrap .largePic {
+  object-position: 60% 60%;
+}
+.restaurant .restaurantBox__imgwrap .newBox {
+  position: absolute;
+  left: 71%;
+  top: 1px;
+  background-color: #99E2D0;
+  width: 65px;
+  padding: 4px;
+  text-align: center;
+  border-radius: 5%;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #009e60;
+  font-family: "roboto";
+}
 .restaurant .restaurantBox .restaurantBoxCaption {
   display: flex;
   padding: 5px;
+  justify-content: space-between;
 }
 .restaurant .restaurantBox .restaurantBoxCaption__elem {
   padding: 5px;
@@ -174,9 +230,7 @@ a {
 }
 .restaurant .restaurantBox .restaurantBox__logo {
   padding-top: 0.7rem;
-}
-.restaurant .restaurantBox .restaurantBox__logo--heart {
-  font-size: 1.3rem;
+  padding-right: 6%;
 }
 
 .footer {
