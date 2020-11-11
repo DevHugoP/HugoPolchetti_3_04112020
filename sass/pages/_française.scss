@@ -4,17 +4,104 @@
     height: 15rem;
     object-fit: cover;
     width: 100%;
+
     }
 }
 
 .cardFull {
+    display: flex;
+    flex-direction: column;
     background-color: #F0F0F0;
     border-radius:1.5rem 1.5rem 0 0 ;
-
+    padding: 0.2rem;
+  
 }
 
 .cardTop{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0.7rem;
+
     &__title{
         margin:0;
+        font-family: 'Shrikhand';
+        font-weight: 400;
+        
     }
+    &__logo{
+        padding: 0rem 1rem;
+    }
+}
+
+.cardArticle{
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    gap: 1.1rem;
+    padding: 0.5rem 0.7rem 1.1rem 0.7rem;
+
+
+}
+
+.cardArticle__BoxTop{
+    margin: 0;
+
+    &--title{
+        margin:0; 
+        padding: 0.1rem 0;
+        font-weight: 300;
+        font-size: 0.9rem ;
+
+    }
+    &--bar{
+        height: 0.2rem;
+        width: 2.4rem;
+        content: "";
+        background-color: $tertiary-color;
+        margin: 0;
+    }
+}
+
+
+.cardArticleDishBox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+    background-color: white;
+    border-radius: 0.8rem;
+    padding: 0.6rem 0.5rem;
+    box-shadow: 0px 3px 5px 3px rgba(0,0,0,0.09);
+
+    &__price{
+        font-size: 0.8rem;
+        font-weight: bold;
+        color: #404040;
+        margin: 0;
+        padding-top: 1rem;
+        padding-right: 0.6rem;
+    }
+}
+
+.cardArticleDishBox__desc{
+    line-height: 1.3rem;
+
+    &--title{
+        font-size: 1rem;
+        margin:0;
+    }
+    &--underTitle{
+        margin: 0;
+        font-size: 0.8rem;
+    }
+}
+
+
+.buttonCard{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 130px;
+    margin-top: 1rem;
+    margin-left: 4rem;
 }
