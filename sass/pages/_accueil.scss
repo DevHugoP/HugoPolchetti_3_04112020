@@ -50,6 +50,12 @@
 }
 
 
+.containerCenter {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+}
+
 .operation {
     display: flex;
     flex-direction: column;
@@ -76,22 +82,19 @@
         border-radius: 1.3rem;
         padding: 0.5rem;
         box-shadow: 0px 3px 5px 3px rgba(0,0,0,0.09);
-        width: 270px;
+        width: 300px;
 
         &--icon {
             position: relative;
             right: 1.1rem;
             color: gray;
         }
-
-
         &--text {
             position: relative;
             right: 1.2rem;
             font-weight: bold;
             font-size: 0.9rem;
         }
-
         &--bubble {
             background-color: #9356DC;
             font-size: 0.7rem;
@@ -109,10 +112,13 @@
     }
 }
 
-
+.background{
+    background-color: #F5F5F5;
+}
 
 .restaurant {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     gap: 1.5rem;
     padding: 3rem 1rem;
@@ -129,7 +135,7 @@
         background-color: white;
         border-radius: 1rem 1rem 1rem 1rem;
         box-shadow: 0 0 16px #0000002e;
-        max-width: 425px;
+        max-width: 375px;
 
 
         &__imgwrap {
@@ -190,12 +196,49 @@
             }
         }
         .restaurantBox__logo {
-
+            
             padding-top: 0.7rem;
             padding-right: 6%;
-
         }
 
     } 
 
 }
+
+
+@media screen and (min-width: 768px ) {
+
+    .restaurant{
+        display: grid;
+        row-gap: 4rem;
+        column-gap: 4rem;
+        grid-template-columns: repeat(2, 1fr);
+
+        &__title {
+           grid-column: -1/1;
+           font-size: 1.5rem;
+        }
+    }
+}
+
+
+
+
+@media screen and (min-width: 1440px ) {
+
+    .operation {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 3rem;
+        row-gap: 2rem;
+        &__title{
+            grid-column: -1/2;
+            margin-left: 75px;
+            
+    
+        }
+    
+    }
+
+}
+

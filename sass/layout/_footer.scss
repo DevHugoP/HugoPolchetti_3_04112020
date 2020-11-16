@@ -12,7 +12,8 @@
 
        &--logo {
            filter: invert(1);
-           width: 30%;  
+            width: 33%;
+            max-width: 7rem;
        }
    }
 }
@@ -47,3 +48,12 @@
     }
 }
 
+@media screen and (min-width: 768px ){
+    .footer{
+        text-align: center;
+    }
+    
+    .footerContainer {
+        align-items: center;
+    }
+}

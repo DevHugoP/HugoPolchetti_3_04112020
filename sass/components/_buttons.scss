@@ -26,8 +26,13 @@
 
 .heart {
     font-size: 1.3rem;
-    color: pink;
-    border-radius: 100%;
-    border-color: black 1px solid;
-    background-size: cover;
 }
+
+.heart:hover {
+
+    display: block;
+    background: -webkit-linear-gradient(#9356DC, #FF79DA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
