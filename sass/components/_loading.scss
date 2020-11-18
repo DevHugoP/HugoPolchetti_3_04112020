@@ -1,0 +1,43 @@
+.spinnerContainer {
+    position: absolute;
+    top:50%;
+    left: 50%;
+}
+
+.spinner {
+    position: relative;
+    left:-50%;
+    z-index: 1;
+    width: 70px;
+    height: 70px;
+}
+
+.spinner:after{
+    content: "";
+    display: block;
+    width: 80px;
+    height: 80px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 10px solid black;
+    border-color: #FF79DA transparent #9356DC transparent;
+    animation: spinner 1.6s linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+}
+@keyframes spinner {
+    0% {
+      transform: rotate(0deg);
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      transform: rotate(360deg);
+    }
+  }
+
+
+

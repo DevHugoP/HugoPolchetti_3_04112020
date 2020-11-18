@@ -1,0 +1,36 @@
+.cardArticle{
+    animation: cardArticle 1s ease-in-out;
+    transform-origin: top center;
+    animation-fill-mode: forwards;
+
+}
+
+
+
+@keyframes cardArticle {
+    0% {
+        transform: scaleY(0);
+    }
+
+    100%{
+        transform: scaleY(1);
+    }
+}
+
+
+
+
+.cardArticleDishBox {
+    animation: cardArticleDishBox 2s ease;
+}
+
+@keyframes cardArticleDishBox {
+    0% {
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+

@@ -10,8 +10,23 @@ a {
 
 .main {
   margin: auto;
+  content: "";
+  animation: main 1.6s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
+@keyframes main {
+  0% {
+    opacity: 0.2;
+  }
+  80% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .btn__order {
   border-radius: 2rem;
   padding: 0.85rem 0.85rem;
@@ -188,7 +203,6 @@ a {
   justify-content: center;
   align-items: center;
   background-color: #F0F0F0;
-  padding: 0rem 1rem;
 }
 .reservation__title {
   margin: 0;
@@ -402,6 +416,72 @@ a {
 
   .footerContainer {
     align-items: center;
+  }
+}
+.spinnerContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.spinner {
+  position: relative;
+  left: -50%;
+  z-index: 1;
+  width: 70px;
+  height: 70px;
+}
+
+.spinner:after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 80px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 10px solid black;
+  border-color: #FF79DA transparent #9356DC transparent;
+  animation: spinner 1.6s linear;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(360deg);
+  }
+}
+.cardArticle {
+  animation: cardArticle 1s ease-in-out;
+  transform-origin: top center;
+  animation-fill-mode: forwards;
+}
+
+@keyframes cardArticle {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+.cardArticleDishBox {
+  animation: cardArticleDishBox 2s ease;
+}
+
+@keyframes cardArticleDishBox {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 

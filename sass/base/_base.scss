@@ -1,7 +1,7 @@
+
 body {
     margin: 0;
     font-family: "Roboto", sans-serif;
-
 }
 
 a {
@@ -12,6 +12,21 @@ a {
 
 .main {
     margin: auto;
-
+    content: "";
+    animation: main 1.6s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
+
+@keyframes main {
+    0% {
+      opacity: 0.2;
+    }
+    80%{
+        opacity:0.2;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
 

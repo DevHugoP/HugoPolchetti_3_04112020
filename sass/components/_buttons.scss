@@ -19,9 +19,7 @@
 
 }
 
-//Utiliser la fonction enlighten pour éclaircir le bouton !!
-
-
+//Utiliser la fonction lighten pour éclaircir le bouton  et pas un re-paint !!
 
 
 .heart {
@@ -35,4 +33,3 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
