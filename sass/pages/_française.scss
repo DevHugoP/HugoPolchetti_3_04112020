@@ -32,7 +32,7 @@
 .cardTop{
     display: flex;
     justify-content: space-between;
-    padding: 1rem 0.7rem;
+    padding: 1.6rem 0.7rem;
 
     &__title{
         margin:0;
@@ -40,7 +40,8 @@
         font-weight: 400;
     }
     &__logo{
-        padding: 0rem 1rem;
+        position: relative;
+        padding-top: 0.3rem;
     }
 }
 

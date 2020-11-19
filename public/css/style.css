@@ -48,10 +48,26 @@ a {
 }
 
 .heart {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
+  position: absolute;
+  left: -3rem;
+  z-index: 3;
+  opacity: 0;
 }
 
-.heart:hover {
+.heartBorder {
+  position: absolute;
+  font-size: 1.4rem;
+  left: -3rem;
+  z-index: 4;
+}
+
+.heartBorder:hover {
+  opacity: 0;
+}
+
+.heartBorder:hover + .heart {
+  opacity: 1;
   display: block;
   background: -webkit-linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
@@ -101,7 +117,7 @@ a {
 .cardTop {
   display: flex;
   justify-content: space-between;
-  padding: 1rem 0.7rem;
+  padding: 1.6rem 0.7rem;
 }
 .cardTop__title {
   margin: 0;
@@ -109,7 +125,8 @@ a {
   font-weight: 400;
 }
 .cardTop__logo {
-  padding: 0rem 1rem;
+  position: relative;
+  padding-top: 0.3rem;
 }
 
 .cardArticle {
@@ -344,7 +361,8 @@ a {
 }
 .restaurant .restaurantBox .restaurantBox__logo {
   padding-top: 0.7rem;
-  padding-right: 6%;
+  position: relative;
+  display: inline-block;
 }
 
 @media screen and (min-width: 768px) {

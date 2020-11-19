@@ -23,13 +23,30 @@
 
 
 .heart {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
+    position: absolute;
+    left: -3rem;
+    z-index: 3;
+    opacity: 0;
 }
 
-.heart:hover {
+.heartBorder {
+    position: absolute;
+    font-size: 1.4rem;
+    left: -3rem;
+    z-index: 4;
+}
 
+
+.heartBorder:hover {
+    opacity: 0;
+}
+
+.heartBorder:hover + .heart {
+    opacity: 1;
     display: block;
     background: -webkit-linear-gradient(#9356DC, #FF79DA);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
