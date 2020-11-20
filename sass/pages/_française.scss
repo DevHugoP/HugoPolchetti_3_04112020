@@ -82,6 +82,7 @@
     box-shadow: 0px 3px 5px 3px rgba(0,0,0,0.09);
 
     &__price{
+        display: flex;
         font-size: 0.8rem;
         font-weight: bold;
         color: #404040;
@@ -92,7 +93,9 @@
 }
 
 .cardArticleDishBox__desc{
+    width: 90%;
     line-height: 1.3rem;
+    padding: 0.3rem;
 
     &--title{
         font-size: 1rem;
