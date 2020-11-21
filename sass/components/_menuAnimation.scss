@@ -29,7 +29,7 @@
     opacity: 0;
     animation: box1 0.7s ease-out;
     animation-fill-mode: forwards;
-    animation-delay: 200ms;
+    animation-delay: 300ms;
 }
 @keyframes box1{
     0%{
@@ -49,7 +49,7 @@
 .box2{
     opacity: 0;
     animation: box2 0.7s ease-out;
-    animation-delay: 350ms;
+    animation-delay: 450ms;
     animation-fill-mode: forwards;
 }
 @keyframes box2{
@@ -69,7 +69,7 @@
 .box3{
     opacity: 0;
     animation: box3 0.7s ease-out;
-    animation-delay: 550ms;
+    animation-delay: 600ms;
     animation-fill-mode: forwards;
 }
 @keyframes box3{

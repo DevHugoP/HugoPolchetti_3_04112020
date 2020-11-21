@@ -83,27 +83,31 @@
 
     &__price{
         display: flex;
+        text-align: center;
         font-size: 0.8rem;
         font-weight: bold;
         color: #404040;
         margin: 0;
-        padding-top: 1rem;
-        padding-right: 0.6rem;
+        
     }
 }
 
 .cardArticleDishBox__desc{
     width: 90%;
     line-height: 1.3rem;
-    padding: 0.3rem;
+    padding: 0.5rem;
 
     &--title{
         font-size: 1rem;
         margin:0;
+        text-overflow: ellipsis;
+
     }
     &--underTitle{
         margin: 0;
         font-size: 0.8rem;
+        text-overflow: ellipsis;
+
     }
 }
 
@@ -115,3 +119,18 @@
     margin-top: 15px;
 }
 
+.circleContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 0;
+    overflow: hidden;
+    border-radius: 0 0.8rem 0.8rem 0;
+
+}
+
+.circle{
+    background-color: #99E2D0;
+    color: white;
+    font-size: 1.3rem;
+}

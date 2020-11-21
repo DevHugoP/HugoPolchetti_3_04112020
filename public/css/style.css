@@ -164,26 +164,27 @@ a {
 }
 .cardArticleDishBox__price {
   display: flex;
+  text-align: center;
   font-size: 0.8rem;
   font-weight: bold;
   color: #404040;
   margin: 0;
-  padding-top: 1rem;
-  padding-right: 0.6rem;
 }
 
 .cardArticleDishBox__desc {
   width: 90%;
   line-height: 1.3rem;
-  padding: 0.3rem;
+  padding: 0.5rem;
 }
 .cardArticleDishBox__desc--title {
   font-size: 1rem;
   margin: 0;
+  text-overflow: ellipsis;
 }
 .cardArticleDishBox__desc--underTitle {
   margin: 0;
   font-size: 0.8rem;
+  text-overflow: ellipsis;
 }
 
 .buttonCard {
@@ -192,6 +193,21 @@ a {
   margin: auto;
   margin-bottom: 50px;
   margin-top: 15px;
+}
+
+.circleContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 0;
+  overflow: hidden;
+  border-radius: 0 0.8rem 0.8rem 0;
+}
+
+.circle {
+  background-color: #99E2D0;
+  color: white;
+  font-size: 1.3rem;
 }
 
 .localisation {
@@ -482,7 +498,7 @@ a {
   opacity: 0;
   animation: box1 0.7s ease-out;
   animation-fill-mode: forwards;
-  animation-delay: 200ms;
+  animation-delay: 300ms;
 }
 
 @keyframes box1 {
@@ -501,7 +517,7 @@ a {
 .box2 {
   opacity: 0;
   animation: box2 0.7s ease-out;
-  animation-delay: 350ms;
+  animation-delay: 450ms;
   animation-fill-mode: forwards;
 }
 
@@ -521,7 +537,7 @@ a {
 .box3 {
   opacity: 0;
   animation: box3 0.7s ease-out;
-  animation-delay: 550ms;
+  animation-delay: 600ms;
   animation-fill-mode: forwards;
 }
 
@@ -538,38 +554,33 @@ a {
     opacity: 1;
   }
 }
-.boxAnim {
-  display: flex;
-  background-color: #99E2D0;
-  justify-content: center;
-  align-items: center;
-  transform-origin: right;
-  animation: boxAnim 1s forwards;
-  animation-delay: 2s;
+.cardArticleDishBox:hover .circleContainer {
+  animation: slider;
+  animation-duration: 1s;
   animation-fill-mode: forwards;
-  opacity: 0;
-  border-radius: 0 0.8rem 0.8rem 0;
+  background-color: #99E2D0;
 }
 
-@keyframes boxAnim {
-  0% {
-    width: 0%;
+@keyframes slider {
+  from {
+    width: 0;
     height: 100%;
   }
-  100% {
-    height: 100%;
+  to {
     width: 20%;
-    opacity: 1;
+    height: 100%;
   }
 }
-.check {
-  animation: check 1s forwards;
-  animation-delay: 1s;
-  color: white;
-  font-size: 1.3rem;
+.cardArticleDishBox:hover .circle {
+  animation: circlerotation;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
 }
 
-@keyframes check {
+@keyframes circlerotation {
+  0% {
+    transform: rotate(0deg);
+  }
   100% {
     transform: rotate(360deg);
   }

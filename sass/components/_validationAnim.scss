@@ -1,41 +1,34 @@
-
-.boxAnim {
-    display: flex;
-    background-color: #99E2D0;
-    justify-content: center;
-    align-items: center;
-    transform-origin: right;
-    animation: boxAnim 1s forwards;
-    animation-delay: 2s;
+.cardArticleDishBox:hover .circleContainer{
+    animation: slider;
+    animation-duration: 1s;
     animation-fill-mode: forwards;
-    opacity: 0;
-    border-radius: 0 0.8rem 0.8rem 0;
+    background-color: #99E2D0;
 }
 
-
-@keyframes boxAnim {
-    0% {
-        width: 0%;
-        height: 100%;
+@keyframes slider {
+    from {
+      width: 0;
+      height: 100%;
     }
-    100%{
-        height: 100%;
-        width: 20%;
-        opacity: 1;
+  
+    to {
+      width: 20%;
+      height: 100%;
     }
-}
+  }
 
-.check {
-    animation: check 1s forwards;
-    animation-delay: 1s;
-    color:white;
-    font-size: 1.3rem;
 
-}
+  .cardArticleDishBox:hover .circle {
+      animation: circlerotation;
+      animation-duration: 1s;
+      animation-fill-mode: forwards;
+  }
 
-@keyframes check {
-
-    100%{
-        transform:rotate(360deg);
-    }
-}
+  @keyframes circlerotation {
+      0%{
+          transform: rotate(0deg);
+      }
+      100%{
+          transform: rotate(360deg);
+      }
+  }
