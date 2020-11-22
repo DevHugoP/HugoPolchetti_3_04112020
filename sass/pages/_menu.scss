@@ -81,6 +81,7 @@
     border-radius: 0.8rem;
     box-shadow: 0px 3px 5px 3px rgba(0,0,0,0.09);
 
+
     &__price{
         display: flex;
         text-align: center;
@@ -93,19 +94,26 @@
 }
 
 .cardArticleDishBox__desc{
-    width: 90%;
+    flex: 1;
+    min-width: 0;
     line-height: 1.3rem;
-    padding: 0.5rem;
+    padding: 0.3rem;
+    
+
 
     &--title{
-        font-size: 1rem;
+        font-size: 0.9rem;
         margin:0;
+        white-space: nowrap;
+        overflow: hidden;
         text-overflow: ellipsis;
 
     }
     &--underTitle{
         margin: 0;
         font-size: 0.8rem;
+        white-space: nowrap;
+        overflow: hidden;
         text-overflow: ellipsis;
 
     }
