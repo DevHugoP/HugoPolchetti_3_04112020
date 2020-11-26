@@ -1,74 +1,26 @@
-
-.box1{
-    opacity: 0;
-    animation: box1 0.7s ease-out;
+.box {
+    opacity:0;
+    animation: boxX 0.7s ease-out;
     animation-fill-mode: forwards;
+}
+
+
+.box1 {
     animation-delay: 300ms;
 }
-@keyframes box1{
-    0%{
-        opacity: 0;
-        transform: translate(0, 25%)
-    }
-    85%{
-        opacity: 1;
-    }
-    100%{
-        transform: translate(0,0);
-        opacity: 1;
-    }
-}
-
-
-.box2{
-    opacity: 0;
-    animation: box2 0.7s ease-out;
+.box2 {
     animation-delay: 450ms;
-    animation-fill-mode: forwards;
 }
-@keyframes box2{
-    0%{
-        opacity: 0;
-        transform: translate(0, 25%)
-    }
-    85%{
-        opacity: 1;
-    }
-    100%{
-        transform: translate(0,0);
-        opacity: 1;
-    }
-}
-
-.box3{
-    opacity: 0;
-    animation: box3 0.7s ease-out;
+.box3 {
     animation-delay: 600ms;
-    animation-fill-mode: forwards;
 }
-@keyframes box3{
-    0%{
-        opacity: 0;
-        transform: translate(0, 25%)
-    }
-    85%{
-        opacity: 1;
-    }
-    100%{
-        transform: translate(0,0);
-        opacity: 1;
-    }
+.box4 {
+    animation-delay:800ms;
 }
 
 
-.box4{
-    opacity: 0;
-    animation: box3 0.7s ease-out;
-    animation-delay: 800ms;
-    animation-fill-mode: forwards;
 
-}
-@keyframes box4{
+@keyframes boxX{
     0%{
         opacity: 0;
         transform: translate(0, 25%)
