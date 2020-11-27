@@ -75,7 +75,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 0.7rem;
+    gap: 0.5rem;
     background-color: white;
     border-radius: 0.8rem;
     box-shadow: 0px 3px 5px 3px rgba(0,0,0,0.09);
@@ -102,7 +102,7 @@
 
 
     &--title{
-        font-size: 1rem;
+        font-size: 0.95rem;
         margin:0;
         white-space: nowrap;
         overflow: hidden;
@@ -111,7 +111,7 @@
     }
     &--underTitle{
         margin: 0;
-        font-size: 0.9rem;
+        font-size: 0.8rem;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
