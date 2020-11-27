@@ -1,7 +1,7 @@
  .circleContainer {
     animation-name: antiSlider;
     animation-duration: 0.4s;
-    background-color: #99E2D0;
+    background-color: $tertiary-color;
     animation-fill-mode: forwards;
 }
 
@@ -20,7 +20,7 @@
     animation: slider;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
-    background-color: #99E2D0;
+    background-color: $tertiary-color;
 }
 
 @keyframes slider {

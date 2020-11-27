@@ -73,7 +73,7 @@
         background-color: rgba(147, 86, 220, 0.15);
     }
     &__box:hover > .iconHover {
-        color: #9356DC;
+        color: $primary-color;
     }
 
     &__box {
@@ -100,7 +100,7 @@
         }
         &--bubble {
             padding: 0.1rem;
-            background-color: #9356DC;
+            background-color: $primary-color;
             font-size: 0.8rem;
             border-radius: 6rem;
             width: 1.2rem;
