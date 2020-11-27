@@ -2,7 +2,7 @@
     
     &__img{
         
-    height: 15rem;
+    height: 18rem;
     object-fit: cover;
     width: 100%;
     }
@@ -48,8 +48,7 @@
     display: flex;
     flex-direction: column;
     gap: 1.1rem;
-    padding: 0.5rem 1rem 1.1rem 1rem;
-    // margin:0.5rem 3rem 1.1rem 3rem ;
+    padding: 1.3rem 1.2rem 1.1rem 1.2rem;
 }
 
 .cardArticle__BoxTop{
@@ -67,7 +66,7 @@
         width: 2.4rem;
         content: "";
         background-color: $tertiary-color;
-        margin: 0;
+        margin: 3px 0 0 0;
     }
 }
 
@@ -98,12 +97,12 @@
     flex: 1;
     min-width: 0;
     line-height: 1.3rem;
-    padding: 0.4rem;
+    padding: 0.6rem;
     
 
 
     &--title{
-        font-size: 0.9rem;
+        font-size: 1rem;
         margin:0;
         white-space: nowrap;
         overflow: hidden;
@@ -112,7 +111,7 @@
     }
     &--underTitle{
         margin: 0;
-        font-size: 0.8rem;
+        font-size: 0.9rem;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -121,11 +120,11 @@
 }
 
 .buttonCard{
-    width: 100px;
+    width: 140px;
     text-align: center;
     margin: auto;
-    margin-bottom: 50px;
-    margin-top: 15px;
+    margin-bottom: 65px;
+    margin-top: 30px;
 }
 
 .circleContainer{

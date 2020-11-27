@@ -1,12 +1,11 @@
  .circleContainer {
-    animation: antiSlider;
+    animation-name: antiSlider;
     animation-duration: 0.4s;
     background-color: #99E2D0;
     animation-fill-mode: forwards;
+}
 
-  }
-
-  @keyframes antiSlider {
+@keyframes antiSlider {
       from {
           width: 16%;
           height: 100%;
@@ -16,7 +15,6 @@
           height: 100%;
       }
   }
-
 
 .cardArticleDishBox:hover .circleContainer{
     animation: slider;
@@ -35,16 +33,15 @@
       width: 16%;
       height: 100%;
     }
-  }
+}
 
-
-  .cardArticleDishBox:hover .circle {
+.cardArticleDishBox:hover .circle {
       animation: circlerotation;
       animation-duration: 0.5s;
       animation-fill-mode: forwards;
   }
 
-  @keyframes circlerotation {
+@keyframes circlerotation {
       0%{
           transform: rotate(0deg);
       }

@@ -47,5 +47,15 @@
     background: -webkit-linear-gradient(#9356DC, #FF79DA);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    animation: 0.30s fillColor ease-in;
+    
 }
 
+@keyframes fillColor {
+    0% {
+        opacity: 20%;
+    }
+    100%{
+        opacity:100%;
+    }
+}
